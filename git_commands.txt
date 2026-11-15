@@ -44,29 +44,26 @@ Stages ignore rules and command documentation.
 14. git commit -m 'Add ignore rules and command guide'
 Records the .gitignore and this command list.
 
-15. git check-ignore -v sample.log temp/sample.txt
-Confirms that .log files and files inside temp/ match the ignore rules.
-
-16. git add about.html
+15. git add about.html
 Stages a harmless temporary edit for the undo demonstration.
 
-17. git commit -m 'Add temporary change for undo demo'
+16. git commit -m 'Add temporary change for undo demo'
 Creates an additional commit that will be reversed.
 
-18. git revert HEAD --no-edit
+17. git revert HEAD --no-edit
 Creates a new commit that reverses the latest commit while preserving history.
 
-19. git status
+18. git status
 Shows whether the working tree has uncommitted changes.
 
-20. git log --oneline --graph --decorate --all
+19. git log --oneline --graph --decorate --all
 Displays commits and branch/merge activity in graph form.
 
-21. git remote add origin https://github.com/pranilpatiltech-cloud/git-workflow-login-test-cases.git
+20. git remote add origin https://github.com/pranilpatiltech-cloud/git-workflow-login-test-cases.git
 Connects the local repository to the public GitHub repository.
 
-22. git remote -v
+21. git remote -v
 Verifies the configured remote URL.
 
-23. git push --force --all origin
+22. git push --force --all origin
 Replaces the two incomplete remote branch histories with the complete local main and feature histories. The remote currently contains only temporary setup commits; on a new empty remote, git push --all origin is sufficient.
