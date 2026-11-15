@@ -1,0 +1,72 @@
+GIT COMMANDS - LOCAL WORKFLOW THROUGH GITHUB PUSH
+
+This file records the Git commands used for this assignment and briefly explains each. File edits are made with an editor or shell between Git operations.
+
+1. git init -b main
+Creates a new local repository with main as the starting branch.
+
+2. git config user.name 'Pranil Patil'
+Sets the commit author name locally for this repository.
+
+3. git config user.email '293784921+pranilpatiltech-cloud@users.noreply.github.com'
+Sets a GitHub no-reply author email locally for this repository.
+
+4. git add index.html about.html
+Stages the initial project pages.
+
+5. git commit -m 'Initial project structure'
+Records the initial project state.
+
+6. git add about.html
+Stages the modified about page.
+
+7. git commit -m 'Update about page'
+Records the second project version.
+
+8. git switch -c feature
+Creates and switches to the feature branch.
+
+9. git add index.html
+Stages the feature-branch update.
+
+10. git commit -m 'Add workflow summary on feature branch'
+Records the feature change on the feature branch.
+
+11. git switch main
+Returns to the main branch.
+
+12. git merge --no-ff feature -m 'Merge feature into main'
+Merges feature into main and creates a visible merge commit.
+
+13. git add .gitignore git_commands.txt
+Stages ignore rules and command documentation.
+
+14. git commit -m 'Add ignore rules and command guide'
+Records the .gitignore and this command list.
+
+15. git check-ignore -v sample.log temp/sample.txt
+Confirms that .log files and files inside temp/ match the ignore rules.
+
+16. git add about.html
+Stages a harmless temporary edit for the undo demonstration.
+
+17. git commit -m 'Add temporary change for undo demo'
+Creates an additional commit that will be reversed.
+
+18. git revert HEAD --no-edit
+Creates a new commit that reverses the latest commit while preserving history.
+
+19. git status
+Shows whether the working tree has uncommitted changes.
+
+20. git log --oneline --graph --decorate --all
+Displays commits and branch/merge activity in graph form.
+
+21. git remote add origin https://github.com/pranilpatiltech-cloud/git-workflow-login-test-cases.git
+Connects the local repository to the public GitHub repository.
+
+22. git remote -v
+Verifies the configured remote URL.
+
+23. git push --force --all origin
+Replaces the two incomplete remote branch histories with the complete local main and feature histories. The remote currently contains only temporary setup commits; on a new empty remote, git push --all origin is sufficient.
